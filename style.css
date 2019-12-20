@@ -1,0 +1,281 @@
+canvas {
+	width: 100%;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    height: 100%;
+	position: relative;
+    margin: 0;
+    min-height: 100vh;
+    background:linear-gradient(
+    45deg, rgba(0, 61, 61, 0.2) 0%,
+     rgba(13, 0, 61,0.2) 15%,
+     rgba(14, 79, 102,0.2) 15%, 
+     rgba(15, 158, 143,0.2) 33%,
+     rgba(80, 180, 216, 0.2) 33%,
+     rgba(16, 198, 163,0.2) 50%, 
+     rgba(16, 198, 163,0.2) 65%,
+     rgba(15, 119, 122,0.2) 65%, 
+     rgba(15, 119, 122,0.2) 85%,
+     rgba(14, 40, 81,0.2) 85%,
+      rgba(14, 40, 81,0.2)100%),
+      linear-gradient(
+         25deg, rgba(13, 0, 61,0.2) 0%, 
+          rgba(13, 0, 61,0.2) 15%,
+          rgba(14, 79, 102,0.2) 15%,
+          rgba(80, 180, 216, 0.2) 15%,
+           rgba(15, 158, 143,0.2) 33%, 
+           rgba(80, 180, 216, 0.2) 33%,
+
+           rgba(153, 51, 153,0.2) 50%, 
+           rgba(102, 0, 102,0.2) 65%,
+           rgba(80, 180, 216, 0.2) 65%,
+ 
+           rgba(14, 40, 81,0.2) 85%, 
+           rgba(14, 40, 81,0.2)100%),
+           linear-gradient(0deg,
+            rgba(13, 0, 61,0.2) 0%, 
+            rgba(13, 0, 61,0.2) 15%
+            ,rgba(14, 79, 102,0.2) 15%,
+             rgba(14, 79, 102,0.2) 33%,
+              rgba(153, 51, 153,0.2) 50.001%,
+               rgba(102, 0, 102,0.2) 65%, 
+               rgba(15, 119, 122,0.2) 85%,
+               rgba(14, 40, 81,0.2) 85%, 
+               rgba(14, 40, 81,0.2)100%),
+               linear-gradient(90deg, rgb(73, 73, 73),rgb(94, 94, 94));
+}
+
+h2 {
+    margin-top: 0;
+    padding-top: .8em;
+    text-align: center;
+    color: white;
+}
+#title{
+    color: white;
+	font-size: 3rem;
+
+}
+h1 {
+	font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    float: left;
+    letter-spacing: 0.1em;
+}
+
+span {
+	font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    color: #808080;
+    letter-spacing: 0.03em;
+}
+
+p {
+	font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    float: right;
+}
+
+a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;	
+}
+
+img:hover {
+transform: translateY(150px);
+
+  transition: 5s;
+}
+
+
+/* .parallelogram {
+	position: relative;
+    width: 80px;
+	height: 50px;
+	transform: skew(-20deg);
+	background: pink;
+	margin-left: 1135px;
+	position: absolute;
+    z-index: -1;
+} */
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.image_circle {
+    border: 5px solid pink;
+    background: white;
+	width: 600px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-top: 2rem;
+    z-index: 0;
+    
+}
+
+ul {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 30px;
+   list-style-type: none;
+}
+
+.content {
+    position: absolute;
+    top: 300px;
+    left: 65%;
+    height: 500px;
+    width: 500px;
+}
+
+/* .portfolio {
+	color: #FF69B4;
+	font-size: 3rem;
+} */
+
+nav {
+    position: relative;
+    perspective: 600px;
+    z-index: 99
+}
+
+.nav_div > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    background: rgba(0,0,0,0.2);
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.nav_div > li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.nav_div > li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.dropdown {
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+    padding: 20px;
+    top: -20px;
+    border-radius: 2px;
+    transition: all 0.5s;
+    transform: translateY(100px);
+    will-change: opacity;
+    display: none;
+}
+
+.trigger-enter .dropdown {
+    display: block;
+}
+
+.trigger-enter-active .dropdown {
+    opacity: 1;
+}
+
+.dropdownBackground {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
+    transition: all 0.3s, opacity 0.1s, transform 0.2s;
+    transform-origin: 50% 0;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+
+.dropdownBackground.open {
+    opacity: 1;
+}
+
+.arrow {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: white;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.bio {
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7;
+}
+
+.projects {
+    min-width: 300px;
+}
+
+.projects li {
+    padding: 10px 0;
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: #348d7c;
+}
+
+a.button {
+    background: black;
+    display: block;
+    padding: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+/* Matches Twitter, TWITTER, twitter, tWitter, TWiTTeR... */
+.button[href*=github] { background: #019FE9; }
+.button[href*=ramonmorcillo] { background: #019FE9; }
