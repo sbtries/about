@@ -103,10 +103,9 @@ a {
     text-decoration: none;	
 }
 
-img:hover {
+.img_hover {
 transform: translateY(150px);
-
-  transition: 5s;
+transition: 5s;
 }
 
 

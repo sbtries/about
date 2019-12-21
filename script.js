@@ -1,12 +1,16 @@
 let title = document.getElementById("title");
 title.addEventListener("mouseover",function(){
 	title.style.color = "pink";
-})
-
+});
 title.addEventListener("mouseout",function(){
 	title.style.color = "white";
-})
+});
 
+let centralImg = document.getElementById('central_img');
+
+centralImg.addEventListener("mouseover", function(){ 
+    centralImg.classList.add("img_hover");
+});
 
 let triggers = document.querySelectorAll('.nav_div > li');
 let background  = document.querySelector('.dropdownBackground');
