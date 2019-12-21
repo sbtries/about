@@ -278,4 +278,4 @@ a.button {
 }
 /* Matches Twitter, TWITTER, twitter, tWitter, TWiTTeR... */
 .button[href*=github] { background: #019FE9; }
-.button[href*=ramonmorcillo] { background: #019FE9; }
+.button[href*=linkedin] { background: #993399 }
