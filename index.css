@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Niramit", sans-serif;
+  background-image: url("https://images.squarespace-cdn.com/content/5ad51cc831d4df7142bc7ac2/1582915386243-MOKKRHI855Q96528K5F8/IMG_0695.jpg?format=750w&content-type=image%2Fjpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+}
+
+.name {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+  text-shadow: 13px 1px 71px black;
+}
+
+h1 {
+  font-size: 5vw;
+  text-align: center;
+  color: #c4a781;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2vw;
+  text-align: center;
+
+  color: #c4a781;
+  font-family: "Roboto", sans-serif;
+}
+.logo{
+    height: 4rem;
+    padding: 2rem;
+}
+@media (max-width: 750px) {
+h2 {
+  font-size: 6vw;
+}
+h1 {
+    font-size: 15vw;
+  }
+}
